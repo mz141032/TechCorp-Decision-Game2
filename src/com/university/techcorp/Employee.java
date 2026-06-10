@@ -1,0 +1,27 @@
+package com.university.techcorp.domain;
+
+public abstract class Employee {
+    private String name;
+    private int skill;
+    private double salary;
+
+    public Employee(String name, int skill, double salary) {
+        this.name = name;
+        this.skill = skill;
+        this.salary = salary;
+    }
+
+    public abstract int work();
+
+    public String getName() {
+        return name;
+    }
+
+    public int getSkill() {
+        return skill;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+}
